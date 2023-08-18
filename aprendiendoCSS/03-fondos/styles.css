@@ -1,0 +1,18 @@
+body{
+    background-image: url(loginP2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* para que el fondo se quede fijo y solo se mueva el contenido */
+    background-attachment:fixed;
+    /* background-position: bottom; */
+}
+
+.caja{
+    background-color: mediumorchid;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+h2{
+    background-color: aquamarine;
+}

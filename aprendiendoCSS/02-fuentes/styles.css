@@ -1,0 +1,41 @@
+@font-face {
+    font-family:  'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap');
+}
+
+/* Colores
+    //Colores del sistema
+    color: MediumPurple;
+    //Colores hexadecimales
+    color: #cccc
+    //Colores RGB
+    color: rgb(255,255, 107);
+    //Colores RGBA
+                            ultimo valor es la transparencia
+    color: rgba(255,255, 107,0.5);
+    color: 
+*/
+
+body{
+    background: white;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: mediumpurple;
+}
+
+h3{
+    /* font-family: "Comic Sans MS"; */
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+}
+
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,116 @@
+/*
+Ejercicio completo con html y css
+1.Crear un documento html y vincularlo con css
+2.Crear una estructura html que cuente con un contenedor General
+    cabecera,menu, sidebar, Seccion conetido principal,
+    elementos dentro del contenedor principal y footer
+3.Todo el contenido debe estar dentro del contenedor general y su ancho sera de 1200px
+4. Header debe ocupar el 100% del ancho y tener un texto grande centrado
+5.El menu debe tener los elementos uno a lado del otro
+6. El contenido principal debe tener un ancho del 70%
+7. El contenido dentro del contenedor principal debe ser una cuadricula con 
+    4 lineas de dos cajas
+8. La barra lateral debe tener un ancho del 30%
+9. El footer debe tener un ancho del 100% del div y estar abajo del todo
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(235, 233, 240);
+}
+
+#principal{
+    max-width: 1200px;
+    /* centrar el contenedor */
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(13, 13, 221);
+    color: white;
+    text-align: center;
+    /* para centrar verticalmente */
+    line-height: 90px;
+}
+
+#menu ul li{
+    list-style: none;
+    /*puedo colocarlos de esta forma uno a lado del otro  
+    display: inline-block; */
+
+    /* Otra forma de manejar el mismo tema, haciendo uso
+    de flotamientos y del div clearfix*/
+    display: block;
+    float: left;
+    /* padding: 15px; */
+    border-right: 1px solid #ccc;
+
+}
+
+#menu ul li a{
+    display: block;
+    color: #444;
+    padding: 15px;
+}
+
+#menu ul li:hover a{
+    color: white ;
+}
+
+#menu ul li:hover{
+    background-color: rgb(13, 13, 221);
+    cursor: pointer;
+}
+
+#menu{
+    background-color: #eee;
+    align-items: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.main-content{
+    float: left;
+    width: 69.5%;
+}
+
+#lateral{
+    float: left;
+    width: 30%;
+    min-height: 600px;
+}
+.main-content > h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.main-content .box{
+    background-color: rebeccapurple;
+    color: white;
+    border: 3px solid black;
+    width: 46%;
+    height: 100px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+#footer{
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    height: 45px;
+}
