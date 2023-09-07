@@ -29,7 +29,6 @@ body{
     /* centrar el contenedor */
     margin: 0px auto;
     margin-top: 20px;
-    border: 2px solid black;
 }
 
 #header{
@@ -53,7 +52,6 @@ body{
     float: left;
     /* padding: 15px; */
     border-right: 1px solid #ccc;
-
 }
 
 #menu ul li a{
@@ -89,12 +87,18 @@ body{
 #lateral{
     float: left;
     width: 30%;
-    min-height: 600px;
+    border: 2px solid red;
+    min-height: 550px;
+    max-height: 650px;
+    text-align: center;
+    /* overflow, texto que se sale de la caja meter un scroll u ocultar */
+    overflow-y: scroll;
 }
 .main-content > h1{
     text-align: center;
     border-bottom: 1px solid #ccc;
     padding: 15px;
+    text-shadow: 0px 0px 5px gray;
 }
 
 .main-content .box{
@@ -102,15 +106,38 @@ body{
     color: white;
     border: 3px solid black;
     width: 46%;
-    height: 100px;
+    height: 150px;
     display: block;
     float: left;
     margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 5px 0px 4px gray;
+    border-radius: 10px;
 }
 
 #footer{
+    width: 100%;
     background-color: #ccc;
     text-align: center;
     line-height: 40px;
     height: 45px;
+}
+
+.libre{
+    /* Mover un elemento por donde yo desee en la pagina */
+    position: absolute;
+    top: 50%;
+    right: 60%;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+}
+
+.fija{
+    /* posicion fixed, se mantienen en la pantalla fijadas */
+    position: fixed;
+    background-color: blue;
+    top: 50%;
+    left: 30%;
 }

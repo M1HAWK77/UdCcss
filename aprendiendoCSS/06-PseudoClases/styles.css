@@ -1,0 +1,62 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color:aqua ;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+/* Pseudoselectores */
+
+/* PseudoSelector de primer hijo, se sabe que es un 
+pseudoselector por que tiene los : */
+ul li:first-child{
+    color: purple;
+    font-weight: bold;
+}
+
+ul li:nth-child(3){
+    color: green;
+    font-weight: bold;
+}
+
+ul li:last-child{
+    color: red;
+    font-weight: bold;
+}
+
+#my-link{
+    font-size: 1.6em;
+    color: lightcoral;
+    text-decoration: none;
+}
+
+#my-link:link{
+    color:yellowgreen;
+}
+
+#my-link:visited{
+    color: rebeccapurple;
+}
+
+ul li:hover{
+    color: blue;
+}
+
+ul li:active{
+    color: greenyellow;
+    font-family: 1.2em;
+}
+
+/* Focus is used more in forms */
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+input[type="text"]:focus{
+    border: 4px dashed red;
+}

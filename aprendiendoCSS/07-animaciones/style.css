@@ -1,0 +1,82 @@
+#btnA{
+    /* Se comporte como un bloque */
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 150px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid rgb(8, 82, 8);
+    box-shadow: 3px 3px 0px gray ;
+    /* Al elemento original toca aplicar la transicion 
+    para que el hover se vea mejor*/
+    /* transition: 500ms; */
+
+    /* Puedo meter diferntes propiedades para las transiciones
+    con esto me refiero a que se modifique otros elementos con tiempos 
+    diferentes*/
+    transition: border 500ms, backgroung 3s, border-radius 1s;
+
+}
+
+#btnA:hover{
+    border-radius: 15px;
+    background-color: orangered;
+    border: 5px solid red;
+}
+
+/*----------TEMA  ANIMACIONES------------ */
+#caja{
+    width: 250px;
+    height: 250px;
+    background-color: lightseagreen;
+    color: white;
+    border: 5px solid black;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    /* Aplicar los keyfranes */
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+        /* es para hacerlo o no infinita */
+    animation-iteration-count: infinite;
+        /* Para controlar la velocidad */
+    animation-timing-function: linear;
+}
+
+/* Propiedad clave para las animaciones @Keyframes*/
+@keyframes desplazamiento{
+    /* from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    } */
+
+    /* Para que no haya el corte de que se resetea la animacion bruscamente
+    puedo usar */
+    0%{
+        margin-left: 0px;
+        /* Para que gire */
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+        margin-left: 1200px;
+        /* Para que se haga un circulo */
+        border-radius: 999px;
+    }
+    75%{
+        background-color: rebeccapurple;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+
+}
+
